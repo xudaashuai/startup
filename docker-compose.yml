@@ -27,3 +27,5 @@ services:
     depends_on:
       - backend
     build: .
+    ports:
+      - '80:80'
