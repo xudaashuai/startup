@@ -13,6 +13,8 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
+      ME_CONFIG_BASICAUTH_USERNAME: pp
+      ME_CONFIG_BASICAUTH_PASSWORD: pp
     depends_on:
       - mongo
     ports:
