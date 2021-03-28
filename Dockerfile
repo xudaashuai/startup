@@ -1,7 +1,7 @@
 FROM node:12-alpine3.11 as build-stage
 WORKDIR /app
 COPY package*.json ./
-RUN npm install --registry https://registry.npm.taobao.org install express
+RUN npm install --registry https://registry.npm.taobao.org
 COPY ./ .
 RUN npm run build
 
